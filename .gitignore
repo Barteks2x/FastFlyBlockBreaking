@@ -1,0 +1,9 @@
+bin/
+build/
+eclipse/
+.nb-gradle/
+.classpath
+.gradle/
+.project
+.settings/
+*.log
