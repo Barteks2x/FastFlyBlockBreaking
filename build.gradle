@@ -31,13 +31,16 @@ task debug(type:JavaExec, dependsOn: classes) {
     workingDir = 'eclipse'
 }
 
-version = "1.0"
+version = "MC1.8-1.0"
 group= "com.github.barteks2x" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "fastflyblockbreaking"
 
 minecraft {
     version = "1.8-11.14.1.1334"
     runDir = "eclipse"
+    
+    replaceIn "src/main/java/com/github/barteks2x/fastflybreak/FFBB.java"
+    replace '${version}', project.version
 }
 
 dependencies {
