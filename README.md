@@ -1,6 +1,6 @@
 ##FastFlyBlockBreaking
 
-MinecraftForge mod that removes 2x slower block breaking when flying is enabled in survival mode.
+MinecraftForge mod that removes 5x slower block breaking when flying is enabled in survival mode.
 
 ###CurseForge
 
