@@ -8,4 +8,4 @@ You can find this mod [here](http://minecraft.curseforge.com/mc-mods/228262-fast
 
 ###Dev builds
 
-[My jenkins server](http://192.99.42.92:8080/job/FastFlyBlockBreaking/)
+~~My jenkins server~~ (temporarily unavailable)
