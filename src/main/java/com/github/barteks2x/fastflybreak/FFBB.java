@@ -6,7 +6,7 @@ import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 
-@Mod(modid = FFBB.MODID, version = FFBB.VERSION, name = FFBB.NAME, )
+@Mod(modid = FFBB.MODID, version = FFBB.VERSION, name = FFBB.NAME)
 public class FFBB {
   public static final String VERSION = "${version}";
   public static final String NAME = "FastFlyBlockBreaking";
@@ -19,7 +19,6 @@ public class FFBB {
 
   @SubscribeEvent
   public void blockBreakSpeed(PlayerEvent.BreakSpeed event){
-    event.entityPlayer.capabilities.allowFlying = true;
     if(!event.entityPlayer.onGround && event.entityPlayer.capabilities.isFlying){
       event.newSpeed = event.originalSpeed * 5;
     }
