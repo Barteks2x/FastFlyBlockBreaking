@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[25,)"
+issueTrackerURL="https://github.com/Barteks2x/FastFlyBlockBreaking/issues"
+
+[[mods]]
+modId="fastflyblockbreaking"
+version="${file.jarVersion}"
+displayName="Fast Fly Block BReaking"
+description='''
+Allows to break blocks at normal speed when flying is enabled in survival
+'''
+
+[[dependencies.examplemod]] #optional
+    modId="forge"
+    mandatory=true
+    versionRange="[25,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.13.2]"
+    ordering="NONE"
+    side="BOTH"
