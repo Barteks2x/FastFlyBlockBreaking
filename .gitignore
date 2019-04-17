@@ -9,3 +9,6 @@ eclipse/
 *.log
 .idea
 *.iml
+run/
+*.ipr
+*.iws
