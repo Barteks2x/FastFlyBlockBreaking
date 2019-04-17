@@ -1,20 +1,15 @@
 package com.github.barteks2x.fastflybreak;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraft.entity.player.PlayerEntity;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mod("fastflyblockbreaking")
+@Mixin(PlayerEntity.class)
 public class FFBB {
-  public FFBB() {
-    MinecraftForge.EVENT_BUS.register(this);
-  }
-
-  @SubscribeEvent
-  public void blockBreakSpeed(PlayerEvent.BreakSpeed event){
-    if(!event.getEntityPlayer().onGround && event.getEntityPlayer().abilities.isFlying){
-      event.setNewSpeed(event.getOriginalSpeed() * 5);
+    @Redirect(method = "getBlockBreakingSpeed",
+            at = @At(value = "FIELD", target = "Lnet/minecraft/entity/player/PlayerEntity;onGround:Z"))
+    public boolean blockBreakSpeed(PlayerEntity _this){
+        return true;
     }
-  }
 }

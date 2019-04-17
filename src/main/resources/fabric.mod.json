@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "fastflyblockbreaking",
+  "version": "${version}",
+
+  "name": "Fast Fly Block Breaking",
+  "description": "Allows to break blocks at normal speed when flying is enabled in survival",
+  "authors": [
+    "Barteks2x"
+  ],
+  "contact": {
+    "homepage": "https://minecraft.curseforge.com/projects/fastflyblockbreaking",
+    "sources": "https://github.com/Barteks2x/FastFlyBlockBreaking"
+  },
+
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    "ffbb.mixins.json"
+  ],
+
+  "requires": {
+    "fabric": "*"
+  }
+}

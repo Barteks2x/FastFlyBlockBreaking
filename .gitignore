@@ -10,3 +10,5 @@ eclipse/
 .idea
 *.iml
 run/
+*.ipr
+*.iws
