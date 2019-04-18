@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.github.barteks2x.fastflybreak",
+  "package": "com.github.barteks2x.fastflybreak.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "FFBB"
