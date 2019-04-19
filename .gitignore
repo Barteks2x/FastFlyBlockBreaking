@@ -12,3 +12,4 @@ eclipse/
 run/
 *.ipr
 *.iws
+out/
