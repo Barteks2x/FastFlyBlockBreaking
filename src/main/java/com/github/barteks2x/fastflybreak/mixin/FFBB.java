@@ -25,6 +25,6 @@ public abstract class FFBB extends LivingEntity {
     @Redirect(method = "getBlockBreakingSpeed",
             at = @At(value = "FIELD", target = "Lnet/minecraft/entity/player/PlayerEntity;onGround:Z"))
     public boolean blockBreakSpeed(PlayerEntity _this){
-        return this.onGround || this.abilities.allowFlying || this.abilities.flying || Config.alswaysFastBreaking;
+        return this.onGround || this.abilities.allowFlying || this.abilities.flying || Config.alwaysFastBreaking;
     }
 }

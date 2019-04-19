@@ -13,7 +13,7 @@ import java.util.Properties;
 
 public class Config {
     private static final Path CONFIG = FabricLoader.INSTANCE.getConfigDirectory().toPath().resolve("fastflyblockbreaking.properties");
-    public static boolean alswaysFastBreaking = false;
+    public static boolean alwaysFastBreaking = false;
 
     static {
         try {
@@ -33,13 +33,13 @@ public class Config {
         } catch (final IOException exception) {
             throw new UncheckedIOException(exception);
         }
-        final String property = properties.getProperty("alswaysFastBreaking");
-        alswaysFastBreaking = "true".equalsIgnoreCase(property);
+        final String property = properties.getProperty("alwaysFastBreaking");
+        alwaysFastBreaking = "true".equalsIgnoreCase(property);
     }
 
     private static void saveState() {
         final Properties properties = new Properties();
-        properties.setProperty("alswaysFastBreaking", String.valueOf(alswaysFastBreaking));
+        properties.setProperty("alwaysFastBreaking", String.valueOf(alwaysFastBreaking));
         try (final OutputStream output = Files.newOutputStream(CONFIG)) {
             properties.store(output, null);
         } catch (final IOException exception) {
