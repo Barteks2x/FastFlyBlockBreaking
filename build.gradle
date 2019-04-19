@@ -19,7 +19,7 @@ apply plugin: "fabric-loom"
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
-version = "1.0.0"
+version = "1.1.0"
 group= "com.github.barteks2x" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "fastflyblockbreaking"
 
