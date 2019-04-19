@@ -14,7 +14,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "MC1.8-1.0"
+version = "MC1.8-1.1"
 group= "com.github.barteks2x" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "fastflyblockbreaking"
 
